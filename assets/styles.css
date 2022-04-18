@@ -1,0 +1,190 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gridContenedor {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 300px 60px 1fr auto 100px;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    height: 250px;
+    width: 250px;
+}
+
+nav {
+    background-color: brown;
+    height: 50px;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    line-height: 50px;
+}
+
+.info {
+    margin: 40px;
+    text-align: center;
+}
+
+footer {
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h3 {
+    color: white;
+    padding: 10px;
+}
+
+/* contacto */
+
+.infoContacto h3 {
+    color: brown;
+    text-align: center;
+}
+
+/* pedidos */
+
+fieldset {
+    margin: auto;
+    width: 30%;
+}
+
+.botones {
+    text-align: right;
+}
+
+.contenedorPedidos h1 {
+    text-align: center;
+}
+
+/* Servicios */
+
+.gridContenedorServicios {
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto;
+    grid-template-rows: 300px 60px auto 100px;
+}
+table {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Ubicacion */ 
+
+.contenedorUbicacion h1 {
+    text-align: center;
+}
+
+/* Slider */
+  
+  .container{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: brown;
+    width: 800px;
+    padding: 30px;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+
+  @media screen and (max-width: 480px) {
+
+    .gridContenedor {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 300px 300px 1fr auto 300px;
+    }
+
+    nav {
+        height: 50px;
+    }
+    
+    nav ul li{
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        line-height: 50px;
+    }
+
+    footer {
+        background-color: brown;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .gridContenedorServicios {
+        grid-template-rows: 300px 300px auto 300px;
+    }
+  }
