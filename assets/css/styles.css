@@ -1,0 +1,72 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gridContenedor {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 300px 60px 1fr auto 100px;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    height: 250px;
+    width: 250px;
+}
+
+.info {
+    margin: 40px;
+    text-align: center;
+}
+
+footer {
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h3 {
+    color: white;
+    padding: 10px;
+}
+
+/* contacto */
+
+.infoContacto h3 {
+    color: brown;
+    text-align: center;
+}
+
+/* pedidos */
+
+.botones {
+    text-align: center;
+}
+
+.contenedorPedidos h1 {
+    text-align: center;
+}
+
+/* Servicios */
+
+.gridContenedorServicios {
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto;
+    grid-template-rows: 300px 60px auto 100px;
+}
+table {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Ubicacion */ 
+
+.contenedorUbicacion h1 {
+    text-align: center;
+}

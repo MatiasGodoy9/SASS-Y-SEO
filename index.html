@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/styles.css">
+	<link rel="stylesheet" href="./assets/css/styles.css">
+	<link href="./assets/css/bootstrap.min.css" rel="stylesheet" >
     <title>Don yoryo</title>
 </head>
 <body>
@@ -13,37 +14,27 @@
 			<img src="./assets/yory.png" alt="Logo">
 		</header>
 
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="pages/servicios.html">Servicios</a></li>
-				<li><a href="pages/ubicacion.html">Ubicacion</a></li>
-				<li><a href="pages/pedidos.html">Pedidos</a></li>
-				<li><a href="pages/contacto.html">Contacto</a></li>
-		    </ul>
-		</nav>
+		<ul class="nav justify-content-center">
+			<li class="nav-item">
+			  <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="./pages/pedidos.html">Pedidos</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="./pages/ubicacion.html">Ubicacion</a>
+			  </li>
+		  </ul>
 
-		<div class="container">
-  
-			<ul class="slider">
-			  <li id="slide1">
-				<img src="./assets/foto1.jpg"  alt="foto panaderia"/>
-			  </li>
-			  <li id="slide2">
-				<img src="./assets/foto2.jpg" alt="foto panaderia"/>
-			  </li>
-			</ul>
-			
-			<ul class="menu">
-			  <li>
-				<a href="#slide1">1</a>
-			  </li>
-			  <li>
-				<a href="#slide2">2</a>
-			  </li>
-			</ul>
-			
-		  </div>
+		<div class="text-center">
+			<img src="./assets/foto1.jpg" class="img-thumbnail" alt="">
+		</div>
 
 		<div class="info">
 			<h2>¿Quienes somos?</h2>
@@ -56,5 +47,7 @@
 			<h3>Instagram: @Lanuevadonyoryo</h3>
 		</footer>
 	</div>
+
+	<script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
