@@ -6,7 +6,7 @@ body {
 .gridContenedor {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 300px 60px 1fr auto 100px;
+    grid-template-rows: 300px 40px 1fr auto 100px;
 }
 
 header {
@@ -16,6 +16,22 @@ header {
 header img {
     height: 250px;
     width: 250px;
+}
+
+.nav {
+    background-color: brown;
+    justify-content: center;
+}
+
+.navLink {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color .15s 
+    ease-in-out,background-color .15s 
+    ease-in-out,border-color .15s 
+    ease-in-out;
+    color: white;
 }
 
 .info {
@@ -51,14 +67,6 @@ footer h3 {
     text-align: center;
 }
 
-/* Servicios */
-
-.gridContenedorServicios {
-    display: grid;
-    text-align: center;
-    grid-template-columns: auto;
-    grid-template-rows: 300px 60px auto 100px;
-}
 table {
     margin: auto;
     margin-top: 40px;
@@ -69,4 +77,16 @@ table {
 
 .contenedorUbicacion h1 {
     text-align: center;
+}
+
+@media (max-width: 576px) {
+
+    .gridContenedor {
+        grid-template-rows: 300px 40px 1fr auto 300px;
+    }
+
+    footer {
+    flex-direction: column;
+    text-align: center;
+    }
 }
